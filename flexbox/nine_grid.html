@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox 九宫格布局示例</title>
+    <style>
+        body{ background: gray;}
+        .box{
+            width: 300px;
+            height: 300px;;
+            background:#000;
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+       .item{
+            color:white;
+            background:red;
+            box-sizing: border-box;
+            text-align:center;
+            vertical-align:middle;
+            font-size:48px;
+            width: 33.33333%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item:nth-child(3n+1){
+            border-right: 1px solid orange;
+        }
+         .item:nth-child(3n+2){
+            border-right: 1px solid orange;
+        }
+        .item:nth-child(-n+6){
+            border-bottom: 1px solid orange;
+        }
+       
+    </style>
+</head>
+<body>
+   <div class="box">
+       <div class="item"><span>1</span></div>
+       <div class="item"><span>2</span></div>
+       <div class="item"><span>3</span></div>
+       <div class="item"><span>4</span></div>
+       <div class="item"><span>5</span></div>
+       <div class="item"><span>6</span></div>
+       <div class="item"><span>7</span></div>
+       <div class="item"><span>8</span></div>
+       <div class="item"><span>9</span></div>
+   </div> 
+</body>
+</html>

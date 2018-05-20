@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox FrameLayout Demo</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background:#000;
+            display:flex;
+            justify-content: space-between;
+           
+        }
+
+       .item{
+            padding:10px;
+            color:white;
+            background:red;
+            border:1px solid gray;
+            text-align:center;
+        }
+
+        .left{
+            display:flex;
+            flex-direction: column;
+            align-content: space-evenly;
+            justify-content: space-between;
+        }
+        
+        .right{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .item.E{
+            align-self:center;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+       <div class="left">
+              <div class="item A">A</div>
+              <div class="item F">F</div>
+              <div class="item C">C</div>
+       </div>
+       <div class="item E">E</div>
+       <div class="right">
+            <div class="item B">B</div>
+
+            <div class="item D">D</div>
+       </div>
+
+
+
+   </div> 
+</body>
+</html>
